@@ -1,0 +1,1042 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
+    font-family: 'Outfit', sans-serif;
+    height: 100%;
+    background-color: #fbf9f5;
+}
+
+html {
+    font-size: 15px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+.small-container {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+
+/*header*/
+
+.header {
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/header-background.jpg);
+}
+
+.header #mynavigation {
+    border: none;
+    padding: 15px;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    transition: all ease .4s;
+    z-index: 100;
+}
+
+.header .navbar-default {
+    background: none;
+}
+
+.header .bgcolor {
+    background-color: #000;
+}
+
+.header #mynavigation #myNavbar .navbar-nav li a {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.header #mynavigation #myNavbar .navbar-nav li a:hover {
+    color: #ffc107;
+    cursor: pointer;
+    transition: all ease .4s;
+}
+
+.header #mynavigation #myNavbar .navbar-nav li a:active {
+    color: #ffc107;
+}
+
+.header #mynavigation #myNavbar .fa-facebook,
+.header #mynavigation #myNavbar .fa-twitter {
+    width: 23px;
+    height: 23px;
+    background-color: #ffc107;
+    border-radius: 50%;
+    color: #000;
+    text-align: center;
+    line-height: 25px;
+}
+
+.header #mynavigation #myNavbar .fa-facebook:hover,
+.header #mynavigation #myNavbar .fa-twitter:hover {
+    color: #fff;
+    background-color: #fd7e14;
+    cursor: pointer;
+    transition: all ease .4s;
+}
+
+.header #mynavigation #myNavbar .fa-twitter {
+    margin-left: -1.4rem;
+}
+
+.header #mynavigation .navbar-header .navbar-brand {
+    color: #ffc107;
+    margin-top: -0.5rem;
+}
+
+.header #mynavigation #myNavbar .navbar-up {
+    margin-top: 0.2rem;
+}
+
+
+/*banner*/
+
+.header .banner {
+    letter-spacing: 0.1rem;
+    padding-top: 150px;
+    color: #fff;
+}
+
+.header .banner h4 {
+    font-weight: 300;
+}
+
+.header .banner h1 {
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin-bottom: 1.4rem;
+    margin-top: -0.1rem;
+}
+
+.header .banner p {
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+.btn {
+    width: 160px;
+    height: 50px;
+    background-color: #ffc107;
+    color: #000;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px;
+    margin-top: 1.2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    transition: all ease .4s;
+}
+
+.btn:hover {
+    background: none;
+    border: 2px solid #ffc107;
+    color: #ffc107;
+}
+
+.btn-2 {
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.btn-2:hover {
+    border: none;
+    background-color: #fff;
+    color: #000;
+}
+
+
+/*myCarousel*/
+
+.carousel {
+    width: 100%;
+    z-index: 10;
+    position: relative;
+    top: 100px;
+}
+
+.carousel .carousel-inner .item img {
+    border-radius: 10px;
+}
+
+.carousel .carousel-control {
+    width: 0%;
+    top: 45%;
+}
+
+.carousel .carousel-control .glyphicon-menu-left {
+    position: relative;
+    left: -40px;
+    font-size: 2rem;
+}
+
+.carousel .carousel-control .glyphicon-menu-right {
+    position: relative;
+    right: -10px;
+    font-size: 2rem;
+}
+
+
+/*form-section*/
+
+.form-section {
+    width: 100%;
+    background-color: #ffc107;
+    font-weight: 300;
+    padding: 12rem 0 7rem 0;
+}
+
+.form-section .register {
+    line-height: 1.6rem;
+    padding-right: 3rem;
+}
+
+.form-section .register h1 {
+    font-weight: 600;
+    font-size: 2.4rem;
+    margin-bottom: 1.6rem;
+}
+
+.form-section .register p {
+    font-weight: 300;
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+}
+
+.form-section .register ul {
+    padding-left: 1rem;
+    margin-top: 1.4rem;
+}
+
+.form-section .register ul li {
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+.form-section .register ul .bold {
+    font-weight: 900;
+}
+
+.form-section .register-form {
+    padding-left: 3rem;
+}
+
+.form-section .register-form .form-group {
+    line-height: 4rem;
+}
+
+.form-section .register-form #name,
+.form-section .register-form #email,
+.form-section .register-form #pwd {
+    height: 52px;
+    padding-left: 1.6rem;
+    font-size: 1rem;
+    margin-bottom: 1.6rem;
+}
+
+.checkbox label {
+    font-weight: 300;
+}
+
+.underline {
+    text-decoration: underline;
+    font-weight: 100;
+}
+
+.btn-3 {
+    width: 100%;
+    border: 2px solid #000;
+}
+
+.btn-3:hover {
+    background-color: #fff;
+    color: #000;
+    border: none;
+}
+
+
+/*silder*/
+
+.slider {
+    padding: 3rem 5rem;
+}
+
+.slider h3 {
+    color: gray;
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin-bottom: 1.8rem;
+}
+
+.slider .item img {
+    height: 30px;
+}
+
+
+/*trainer*/
+
+.trainer {
+    padding-top: 4rem;
+}
+
+.trainer .bio {
+    padding: 2.6rem 3.6rem;
+}
+
+.trainer .bio h1 {
+    font-weight: 600;
+    font-size: 2.4rem;
+    margin-bottom: 1.6rem;
+}
+
+.trainer .bio p {
+    font-weight: 300;
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+}
+
+.trainer img {
+    border-radius: 5px;
+}
+
+
+/*our-courses*/
+
+.our-courses {
+    padding-top: 8rem;
+}
+
+.our-courses h1 {
+    padding-bottom: 3rem;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3rem;
+}
+
+.our-courses .courses {
+    padding-bottom: 1.4rem;
+}
+
+.our-courses .courses .icon {
+    width: 50px;
+    height: 50px;
+    background-color: #ffc107;
+    border-radius: 100px;
+    line-height: 3.2rem;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.our-courses .courses .text {
+    line-height: 1.6rem;
+}
+
+.our-courses .courses .text h4 {
+    font-size: 1.4rem;
+}
+
+.our-courses .courses .text p {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+
+/*short-course*/
+
+.short-course {
+    padding-top: 8rem;
+}
+
+.short-course h1 {
+    padding-bottom: 0.8rem;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3rem;
+}
+
+.short-course p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+}
+
+.short-course .text-area {
+    padding-right: 6rem;
+    padding-top: 2rem;
+}
+
+.btn-4 {
+    width: 140px;
+    height: 40px;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.btn-4:hover {
+    color: #000;
+    border: 1px solid #000;
+}
+
+.short-course img {
+    border-radius: 5px;
+}
+
+
+/*presentation*/
+
+.presentation {
+    padding-top: 8rem;
+    position: relative;
+}
+
+.presentation img {
+    border-radius: 10px;
+}
+
+.presentation h1 {
+    font-weight: 600;
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
+}
+
+.presentation .youtube-video {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 8%;
+}
+
+.fa-close {
+    color: red;
+    font-size: 1.4rem;
+    position: absolute;
+    top: -2rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.fa-play {
+    position: absolute;
+    top: 45%;
+    left: 48%;
+    font-size: 2.2rem;
+    padding-left: 7px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #ffc107;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.fa-play::after {
+    content: "";
+    border: 15px solid #ffbd50;
+    border-radius: 50%;
+    position: absolute;
+    left: -20px;
+    right: -18px;
+    top: -18px;
+    bottom: -20px;
+    animation: play-btn 1.2s ease-in-out infinite;
+}
+
+@keyframes play-btn {
+    0% {
+        transform: scale(.7);
+    }
+    50% {
+        transform: scale(.9);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/*topics*/
+
+.topics {
+    padding-top: 8rem;
+    background-color: #fbf9f5;
+}
+
+.topics h1 {
+    font-weight: 600;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+.topics p {
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
+
+.topics .card {
+    background-color: #fff;
+    padding: 4rem 3rem;
+    margin-top: 4rem;
+}
+
+.topics .card i {
+    font-size: 2.8rem;
+    color: #ffc107;
+    width: 90px;
+    height: 90px;
+    background-color: #fbf9f5;
+    border-radius: 50px;
+    line-height: 6rem;
+    text-align: center;
+}
+
+
+/*testimonials*/
+
+.testimonials {
+    padding-top: 8rem;
+}
+
+.testimonials h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.testimonials p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+.testimonials img {
+    border-radius: 5px;
+}
+
+
+/*session*/
+
+.session {
+    color: #fff;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/date-background.jpg);
+    border-radius: 10px;
+    padding: 9rem 0;
+    margin-top: 9rem;
+}
+
+.session h1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    margin-bottom: 1.6rem;
+}
+
+.session p {
+    font-weight: 200;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+.btn-5:hover {
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+
+/*subscribe*/
+
+.subscribe {
+    padding-top: 8rem;
+}
+
+.subscribe h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.subscribe #email-2 {
+    width: 75%;
+    height: 50px;
+    padding-left: 1.6rem;
+    font-size: 1rem;
+    display: inline;
+}
+
+.btn-6 {
+    width: 70%;
+}
+
+.subscribe .social-channels {
+    margin-top: 3rem;
+}
+
+.subscribe .social-channels span {
+    width: 50px;
+    height: 50px;
+    background-color: #ffc107;
+    border-radius: 50px;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    margin: 0 0.3rem;
+    transition: all ease .4s;
+}
+
+.subscribe .social-channels span:hover {
+    color: #ffc107;
+    background-color: #000;
+    cursor: pointer;
+}
+
+
+/*contact-us*/
+
+.contact-us {
+    margin-top: 6rem;
+    background-color: #ffc107;
+}
+
+.contact-us .office-location {
+    padding: 8rem 0;
+}
+
+.contact-us .office-location .office-details {
+    padding-top: 2rem;
+}
+
+.contact-us .office-location .office-details h1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.4rem;
+}
+
+.contact-us .office-location .office-details h3 {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.4rem;
+}
+
+.contact-us .office-location .office-details p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-bottom: 2.5rem;
+}
+
+.contact-us .office-location .office-details .location ul {
+    padding-left: 0;
+}
+
+.contact-us .office-location .office-details .location ul li i {
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
+.contact-us .office-location .office-details .location ul li a {
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.contact-us .office-location .office-details .location ul li .underline {
+    text-decoration: underline;
+}
+
+.contact-us .office-location .office-form #name-2,
+.contact-us .office-location .office-form #email-3 {
+    height: 52px;
+    padding-left: 1.6rem;
+    font-size: 1rem;
+    margin-bottom: 1.6rem;
+}
+
+.contact-us .office-location .office-form #comment {
+    padding-left: 1.6rem;
+    font-size: 1rem;
+    margin-bottom: 1.6rem;
+    padding-top: 16px;
+}
+
+.btn-7 {
+    background: none;
+    border: 2px solid #000;
+    width: 100%;
+}
+
+.btn-7:hover {
+    background-color: #fff;
+    color: #000;
+    border: none;
+}
+
+
+/*footer*/
+
+footer {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/header-background.jpg);
+    color: #fff;
+    padding: 4rem 0;
+    line-height: 1.8rem;
+}
+
+footer h3 {
+    font-weight: 400;
+}
+
+footer p {
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+footer ul {
+    padding-left: 0rem;
+    list-style: none;
+}
+
+footer .mid-area {
+    padding-left: 4rem;
+}
+
+footer .mid-area ul li a {
+    color: #fff;
+    font-weight: 100 !important;
+    font-size: 1rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+footer .mid-area .fa-square {
+    font-size: 0.6rem;
+}
+
+footer .social-media span {
+    font-size: 1.4rem;
+    margin-right: 1rem;
+    margin-top: 0.6rem;
+}
+
+
+/*copyright*/
+
+.copyright {
+    width: 100%;
+    height: 70px;
+    background-color: #000;
+    color: #fff;
+    padding-top: 25px;
+}
+
+.copyright p {
+    font-weight: 100;
+}
+
+.copyright span {
+    text-decoration: underline;
+}
+
+
+/*media-query*/
+
+@media (max-width:1200px) {
+    .small-container {
+        max-width: 80%;
+    }
+    .trainer .bio {
+        padding: 0 1rem;
+    }
+    .our-courses .courses .text h4 {
+        line-height: 2rem;
+    }
+    .short-course .text-area {
+        padding-right: 4rem;
+        padding-top: 0rem;
+    }
+    .topics .card {
+        padding: 4rem 2rem;
+    }
+    .topics .row {
+        margin: 0;
+    }
+    .testimonials p {
+        margin-top: 1rem;
+    }
+    .subscribe #email-2 {
+        width: 70%;
+    }
+    .btn-6 {
+        width: 70%;
+    }
+    footer .mid-area {
+        padding-left: 2rem;
+    }
+}
+
+@media (max-width:1010px) {
+    .carousel {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:991px) {
+    .form-section .register-form {
+        padding-left: 1rem;
+        margin-top: 2rem;
+    }
+    .trainer .bio {
+        margin-top: 2rem;
+    }
+    .short-course .student {
+        margin-top: 4rem;
+    }
+    .presentation .youtube-video {
+        top: 46%;
+    }
+    .presentation #myvideo {
+        height: 300px;
+    }
+    .topics .card {
+        width: 50%;
+        margin: 4rem auto 0 auto;
+    }
+    .testimonials .person {
+        text-align: center;
+    }
+    #testimonial .owl-carousel .owl-item img {
+        width: 15%;
+        display: inline-block;
+    }
+    .subscribe #email-2 {
+        width: 85%;
+    }
+    .btn-6 {
+        width: 85%;
+    }
+    .contact-us .office-location .office-form {
+        margin-top: 4rem;
+    }
+    footer .links li {
+        line-height: 1.5rem;
+    }
+    footer .mid-area {
+        padding-left: 1rem;
+    }
+}
+
+@media (max-width:800px) {
+    .header #mynavigation #myNavbar .navbar-up {
+        margin-top: -2.7rem;
+    }
+}
+
+@media (max-width:767px) {
+    .container {
+        max-width: 90%;
+    }
+    html {
+        font-size: 12px;
+    }
+    .header {
+        width: 100%;
+        background-color: #fff;
+    }
+    .header .bgcolor {
+        display: block;
+    }
+    .header #mynavigation {
+        background-color: #000;
+    }
+    .header #mynavigation #myNavbar .fa-twitter {
+        margin-left: 0rem;
+    }
+    .header #mynavigation #myNavbar .navbar-up {
+        margin-top: 0rem;
+        height: 120px;
+    }
+    .header #mynavigation #myNavbar .navbar-nav li a {
+        margin-bottom: -1rem;
+    }
+    .header #mynavigation #myNavbar .navbar-social {
+        display: none;
+    }
+    .carousel {
+        width: 100%;
+    }
+    .carousel .carousel-control .glyphicon-menu-left {
+        left: -35px;
+    }
+    .trainer .bio {
+        margin-top: 4rem;
+    }
+    .our-courses .courses .icon {
+        width: 40px;
+        height: 40px;
+        margin-top: 1rem;
+    }
+    .presentation .youtube-video {
+        top: 35%;
+        left: 0;
+        width: 100%;
+        height: 70%;
+        padding: 0;
+    }
+    .presentation #myvideo {
+        height: 100%;
+    }
+    .fa-play {
+        top: 35%;
+        left: 45%;
+    }
+    .fa-close {
+        right: 0rem;
+    }
+    .topics .card {
+        width: 70%;
+    }
+    .topics .card i {
+        line-height: 7rem;
+    }
+    .subscribe #email-2 {
+        width: 100%;
+    }
+    .btn-6 {
+        width: 100%;
+    }
+    .subscribe .social-channels span {
+        line-height: 4rem;
+    }
+    footer .links ul li {
+        display: block;
+    }
+    footer .mid-area {
+        padding-left: 1.5rem;
+    }
+}
+
+@media (max-width:690px) {
+    .header .banner h1 {
+        font-size: 3.5rem;
+    }
+    .carousel {
+        top: 80px;
+    }
+}
+
+@media (max-width:580px) {
+    .carousel {
+        top: 70px;
+    }
+    .slider .item {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+    .presentation .youtube-video {
+        top: 42%;
+        height: 60%;
+    }
+}
+
+@media (max-width:470px) {
+    .container {
+        max-width: 100%;
+    }
+    html {
+        font-size: 10px;
+    }
+    .header #mynavigation #myNavbar .navbar-up {
+        height: 100px;
+        margin-bottom: 0;
+    }
+    .header #mynavigation #myNavbar .navbar-nav li a {
+        margin-bottom: -2rem;
+    }
+    .carousel .carousel-control .glyphicon-menu-left {
+        left: -30px;
+    }
+    .our-courses .courses .icon {
+        line-height: 4rem;
+    }
+    .subscribe .social-channels span {
+        line-height: 4.5rem;
+    }
+    .topics .card i {
+        line-height: 9rem;
+    }
+}
+
+@media (max-width:460px) {
+    .small-container {
+        max-width: 100%;
+    }
+    .topics .card {
+        width: 90%;
+    }
+    .session {
+        padding: 9rem 2rem;
+    }
+}
+
+@media (max-width:419px) {
+    .header #mynavigation .navbar-header .navbar-brand {
+        margin-top: -5.5rem;
+    }
+    .carousel {
+        top: 55px;
+    }
+    .presentation .youtube-video {
+        top: 46%;
+    }
+    .fa-play {
+        width: 50px;
+        height: 50px;
+        top: 32%;
+        left: 46%;
+    }
+}
+
+@media (max-width:360px) {
+    .carousel {
+        top: 45px;
+    }
+    .presentation .youtube-video {
+        top: 50.5%;
+    }
+}
+
+@media (max-width:324px) {
+    .presentation .youtube-video {
+        top: 55%;
+    }
+}
+
+@media (max-width:315px) {
+    .our-courses .courses .text {
+        padding: 0;
+    }
+    .fa-play {
+        left: 42%;
+    }
+}
