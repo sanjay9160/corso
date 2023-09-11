@@ -45,7 +45,6 @@ $('#testimonial .owl-carousel').owlCarousel({
 
 /*youtube video*/
 var youtubevideo = document.getElementById("youtubevideo");
-var myvideo = document.getElementById("myvideo");
 
 function stopvideo() {
     youtubevideo.style.display = "none";
@@ -62,8 +61,35 @@ function changeBg() {
     if (scrollValue < 50) {
         mynavigation.classList.remove('bgcolor');
     } else {
-        mynavigation.classList.add('bgcolor')
+        mynavigation.classList.add('bgcolor');
     }
 }
 
 window.addEventListener('scroll', changeBg);
+
+
+//form-validation
+function print() {
+    var a = document.getElementById("name-2").value;
+    var b = document.getElementById("email-3").value;
+    var c = document.getElementById("comment").value;
+
+    console.log(a);
+    console.log(b);
+    console.log(c);
+
+    if (a == "") {
+        document.getElementById("important").innerHTML = "! This is required";
+        return false;
+    }
+    if (b == "") {
+        document.getElementById("important-2").innerHTML = "! This is required";
+        return false;
+    }
+    if (c == "") {
+        document.getElementById("important-3").innerHTML = "! This is required";
+        return false;
+    } else {
+        document.write("Congrats");
+    }
+}
