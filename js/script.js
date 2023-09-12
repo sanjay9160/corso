@@ -90,6 +90,6 @@ function print() {
         document.getElementById("important-3").innerHTML = "! This is required";
         return false;
     } else {
-        document.write("Congrats");
+        alert("Congrats");
     }
 }
